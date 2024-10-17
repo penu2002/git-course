@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images.jpg') center/cover no-repeat;
+            background-top:20%;
+           
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 16px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        #logo {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="C:\Users\aksha\OneDrive\Desktop\uni project\logo.png" alt="Hospital Finder Logo">
+        <h1>Hospital Finder</h1>
+    </header>
+
+    <nav>
+        <a href="#hospitals-near-you">Hospitals Near You</a>
+        <a href="#specialized-doctors">Specialized Doctors</a>
+        <a href="#emergency-units-near-you">Emergency Units Near You</a>
+        <a href="#patient-history">Patient History</a>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="your_server_side_script.php" method="post">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required><br></br>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br></br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
